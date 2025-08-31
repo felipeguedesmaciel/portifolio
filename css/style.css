@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid > .carrossel {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 25px 0 40px 0;
+    gap: 20px;
+    width: 100%;
+}
+
+.carrossel{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.carrossel:hover .item {
+    animation-play-state: paused;
+}
+
+.item{
+    width: 0px;
+    height: 50px;
+    position: absolute;
+    left: 100%;
+    animation: autoRun 20s linear infinite;
+    animation-delay: var(--delay);
+    cursor: pointer;
+}
+
+.item img{
+    width: 100%;
+}
+
+@keyframes autoRun {
+    from {
+        width: 100px;
+        left: 100%;
+    }
+    to {
+        left: -100%;
+        width: 100px;
+    }
+    
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.col-md-5 img {
+    width: 100%;
+}
+
+@media screen and (max-width: 991px){
+    #border-none {
+        border: none !important;
+    }
+}
