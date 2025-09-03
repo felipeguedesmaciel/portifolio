@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --leftIni:100%;
+}
+nav{
+    width: 100vw;
+}
 .container-fluid > .carrossel {
     display: flex;
     /* flex-direction: column; */
@@ -39,7 +44,7 @@
 @keyframes autoRun {
     from {
         width: 100px;
-        left: 100%;
+        left: var(--leftIni);
     }
     to {
         left: -100%;
@@ -47,6 +52,17 @@
     }
     
 }
+/* @keyframes autoMedia {
+    from {
+        width: 100px;
+        left: 80%;
+    }
+    to {
+        left: -100%;
+        width: 100px;
+    }
+    
+} */
 
 button a{
     text-decoration: none;

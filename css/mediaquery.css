@@ -1,11 +1,8 @@
 @media screen and (max-width: 375px) {
-    .navbar .container-fluid {
-        /* display: flex !important;
-        flex-direction: column !important;
-        align-items: stretch !important; */
+    /* .navbar .container-fluid {
         justify-content: unset;
         gap: 20px;
-    }
+    } */
     /* .navbar-collapse {
         width: 100%;
     }
@@ -19,4 +16,22 @@
     .navbar .navbar-brand svg {
         margin-right: 0;
     } */
+    .carrossel, .item {
+        width: 100%;
+    }
+        
+    :root{
+         --leftIni:65%;
+    }
 }
+@media screen and (max-width: 480px) {
+    :root{
+         --leftIni:80%;
+    }
+}
+
+/* @media screen and (max-width: 700px) {
+    :root{
+         --leftIni:78%;
+    }
+} */
